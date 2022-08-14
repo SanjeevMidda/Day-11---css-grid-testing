@@ -1,0 +1,36 @@
+.container {
+    display: grid;
+    grid-template-columns: 100px 200px auto;
+    grid-template-rows:200px 200px 200px; 
+    border: 1px solid black;
+    /* gap:30px;
+    text-align: center; */
+    
+}
+
+h1 {
+    border:1px solid black;
+}
+
+.container h1:nth-child(4) {
+font-family: monospace;
+color: blue;
+grid-column-end: span 2;
+}
+
+.container h1:nth-child(1) {
+grid-column-start:2;
+grid-column-end:3;
+grid-row-start:1;
+grid-row-end:3;
+}
+
+.container2 {
+    display: grid;
+    border: 1px solid blue;
+}
+
+body {
+    display:flex;
+    gap: 20px;
+}
